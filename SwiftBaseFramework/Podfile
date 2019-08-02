@@ -1,0 +1,38 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target :SwiftBaseFramework do
+  
+  
+  pod 'SDCycleScrollView','~> 1.75'
+  pod 'MJRefresh','3.1.15'
+  pod 'SnapKit'
+  pod 'AFNetworking'
+  pod 'IQKeyboardManager'
+  pod 'SKPhotoBrowser'
+  pod 'Kingfisher'
+  pod 'MXParallaxHeader' # scrollview下拉header变大
+  pod 'TZImagePickerController'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'HandyJSON', '~> 5.0.0'
+  pod 'SVProgressHUD'
+  pod 'EmptyDataSet-Swift', '~> 4.2.0'
+  pod 'Alamofire' # 网络请求
+
+  
+  pod 'YYCache'
+  pod 'YYText'
+  pod 'YYImage'
+  pod 'YYWebImage'
+  pod 'YBImageBrowser'
+
+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] ='9.0'
+      end
+    end
+  end
+  
+end

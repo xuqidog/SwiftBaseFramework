@@ -1,0 +1,6 @@
+framework module Pods_SwiftBaseFramework {
+  umbrella header "Pods-SwiftBaseFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
