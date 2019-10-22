@@ -38,8 +38,8 @@
 		8E9472CA22F2C3E000A483E8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9472C922F2C3E000A483E8 /* Array+Extension.swift */; };
 		8E9472CD22F2C3FA00A483E8 /* KKALLitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9472CB22F2C3FA00A483E8 /* KKALLitem.swift */; };
 		8E9472CE22F2C3FA00A483E8 /* KKEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9472CC22F2C3FA00A483E8 /* KKEnum.swift */; };
-		8E9472D122F2C45800A483E8 /* KKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9472D022F2C45800A483E8 /* KKBaseViewController.swift */; };
 		C69488FDEC120598C219F8A6 /* Pods_SwiftBaseFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE3978591B5104ECC9BCED1 /* Pods_SwiftBaseFramework.framework */; };
+		D442030B231DFD6E002B3A45 /* KKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442030A231DFD6E002B3A45 /* KKBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +100,8 @@
 		8E9472C922F2C3E000A483E8 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		8E9472CB22F2C3FA00A483E8 /* KKALLitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKALLitem.swift; sourceTree = "<group>"; };
 		8E9472CC22F2C3FA00A483E8 /* KKEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKEnum.swift; sourceTree = "<group>"; };
-		8E9472D022F2C45800A483E8 /* KKBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KKBaseViewController.swift; path = ../../../../../../../../System/Volumes/Data/Users/xuqidong/Documents/swift/SwiftBaseFramework/SwiftBaseFramework/Controller/Base/KKBaseViewController.swift; sourceTree = "<group>"; };
 		95AEA0B8A4C4B7AC1E151DC4 /* Pods-SwiftBaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseFramework.debug.xcconfig"; path = "Target Support Files/Pods-SwiftBaseFramework/Pods-SwiftBaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		D442030A231DFD6E002B3A45 /* KKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKBaseViewController.swift; sourceTree = "<group>"; };
 		E51982998F7EC406D254FFE5 /* Pods-SwiftBaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseFramework.release.xcconfig"; path = "Target Support Files/Pods-SwiftBaseFramework/Pods-SwiftBaseFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,7 +313,7 @@
 		8E9472CF22F2C43100A483E8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				8E9472D022F2C45800A483E8 /* KKBaseViewController.swift */,
+				D442030A231DFD6E002B3A45 /* KKBaseViewController.swift */,
 				8E85016522F41ED200066906 /* KKBaseModel.swift */,
 				8E85016722F41F2700066906 /* KKRequest.swift */,
 				8E85016922F4200E00066906 /* KKBaseItemList.swift */,
@@ -499,12 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E9472D122F2C45800A483E8 /* KKBaseViewController.swift in Sources */,
 				8E9472C422F2C3D200A483E8 /* UIView+Extension.swift in Sources */,
 				8E85017A22F42D2300066906 /* HomeModel.swift in Sources */,
 				8E85016C22F4205C00066906 /* KKAFRequest.swift in Sources */,
 				8E9472C722F2C3D200A483E8 /* UIImage+Extension.swift in Sources */,
 				8E9472B822F2C3C300A483E8 /* KKColor.swift in Sources */,
+				D442030B231DFD6E002B3A45 /* KKBaseViewController.swift in Sources */,
 				8E9472C822F2C3D200A483E8 /* KKTools.swift in Sources */,
 				8E9472B622F2C3C300A483E8 /* KKFont.swift in Sources */,
 				8E85017822F42ABC00066906 /* KKListModel.swift in Sources */,
@@ -703,6 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftBaseFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -710,7 +711,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xuqidong.SwiftBaseFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -721,6 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftBaseFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,7 +730,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xuqidong.SwiftBaseFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
